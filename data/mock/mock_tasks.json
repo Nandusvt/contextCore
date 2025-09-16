@@ -1,0 +1,29 @@
+﻿[
+  {
+    "id": "TASK-001",
+    "project": "QuantumLeap",
+    "title": "Implement authentication service",
+    "description": "Set up the new OAuth2 authentication service using JWT tokens for the QuantumLeap backend.",
+    "status": "In Progress",
+    "assignee": "alice",
+    "tags": ["technical", "backend", "security"]
+  },
+  {
+    "id": "TASK-002",
+    "project": "Phoenix",
+    "title": "Design user dashboard UI/UX",
+    "description": "Create wireframes and mockups for the new user dashboard, focusing on usability and key metrics display.",
+    "status": "To Do",
+    "assignee": "bob",
+    "tags": ["product", "ux", "planning"]
+  },
+  {
+    "id": "TASK-003",
+    "project": "QuantumLeap",
+    "title": "Refactor database schema",
+    "description": "Optimize the main database schema to improve query performance for the QuantumLeap project.",
+    "status": "Done",
+    "assignee": "alice",
+    "tags": ["technical", "backend", "database"]
+  }
+]

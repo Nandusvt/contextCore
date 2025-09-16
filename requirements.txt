@@ -1,0 +1,12 @@
+﻿# Core dependencies
+tiktoken>=0.4.0
+pyyaml>=6.0
+requests>=2.31.0
+numpy
+scikit-learn
+# Optional dependencies for future expansion
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+# sqlalchemy>=2.0.0
+# redis>=5.0.0
+# elasticsearch>=8.0.0

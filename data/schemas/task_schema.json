@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Task",
+  "description": "A schema for a task or ticket in a project management system.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the task."
+    },
+    "project": {
+      "type": "string",
+      "description": "The project this task belongs to."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the task."
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the task."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["To Do", "In Progress", "Done", "Blocked"]
+    },
+    "assignee": {
+      "type": "string",
+      "description": "The username of the person assigned to the task."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["id", "project", "title", "status"]
+}

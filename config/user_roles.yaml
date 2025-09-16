@@ -1,0 +1,36 @@
+roles:
+  engineer:
+    name: "Engineer"
+    description: "A developer working on the core product."
+    permissions:
+      allowed_sources:
+        - "tasks"
+        - "graphiti"
+        - "documents"
+      filter_by_tags:
+        - "technical"
+        - "code"
+        - "architecture"
+        - "backend"
+
+  product_manager:
+    name: "Product Manager"
+    description: "A manager overseeing product development."
+    permissions:
+      allowed_sources:
+        - "tasks"
+        - "documents"
+      filter_by_tags:
+        - "product"
+        - "feature"
+        - "ux"
+        - "planning"
+
+  guest:
+    name: "Guest"
+    description: "A user with read-only, public access."
+    permissions:
+      allowed_sources:
+        - "documents"
+      filter_by_tags:
+        - "public"

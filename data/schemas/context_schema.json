@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Context Chunk",
+  "description": "The canonical schema for a single piece of context retrieved by the system.",
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "The name of the data source this chunk came from (e.g., 'tasks', 'documents')."
+    },
+    "id": {
+      "type": "string",
+      "description": "A unique identifier for the chunk, typically a combination of source and original ID."
+    },
+    "content": {
+      "type": "string",
+      "description": "The actual text content of the context chunk."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "A flexible object containing metadata about the chunk.",
+      "properties": {
+        "type": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "relevance_score": { "type": "number" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": ["source", "id", "content", "metadata"]
+}

@@ -1,0 +1,27 @@
+defaults:
+  max_context_tokens: 2048
+  embedding_model: "text-embedding-3-small"
+  cache_enabled: true
+  tokenizer_model: "cl100k_base"
+
+optimization:
+  ranking:
+    method: "keyword_match"          # Options: keyword_match, cosine, dot
+  deduplication:
+    similarity_threshold: 0.85   # Adjust between 0–1
+
+data_sources:
+  tasks:
+    type: json
+    path: "data/mock/mock_tasks.json"
+    enabled: true
+
+  graphiti:
+    type: json
+    path: "data/mock/mock_graphiti.json"
+    enabled: true
+
+  documents:
+    type: json
+    path: "data/mock/mock_documents.json"
+    enabled: true

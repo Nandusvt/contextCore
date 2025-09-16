@@ -1,0 +1,16 @@
+﻿[
+  {
+    "id": "GRAPH-001",
+    "source": {"name": "auth-service", "type": "service"},
+    "target": {"name": "db", "type": "database"},
+    "relationship": "connects_to",
+    "tags": ["technical", "architecture"]
+  },
+  {
+    "id": "GRAPH-002",
+    "source": {"name": "api-gateway", "type": "service"},
+    "target": {"name": "auth-service", "type": "service"},
+    "relationship": "routes_to",
+    "tags": ["technical", "architecture"]
+  }
+]

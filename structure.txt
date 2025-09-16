@@ -1,0 +1,50 @@
+contextcore/
+├── README.md
+├── requirements.txt
+├── config/
+│   ├── context_config.yaml        # System configuration
+│   └── user_roles.yaml           # Role definitions
+├── src/
+│   ├── __init__.py
+│   ├── main_context.py           # Main ContextEngineer orchestrator
+│   ├── data_sources/
+│   │   ├── __init__.py
+│   │   ├── base.py              # Abstract ContextSource class
+│   │   ├── tasks.py             # TaskContextSource
+│   │   ├── graphiti.py          # GraphitiContextSource
+│   │   ├── documents.py         # DocumentContextSource
+│   │   └── semantic_search.py   # Future: LightRAG integration
+│   ├── retrieval/
+│   │   ├── __init__.py
+│   │   └── context_retriever.py  # Multi-source retrieval engine
+│   ├── optimization/
+│   │   ├── __init__.py
+│   │   ├── ranking.py           # Relevance scoring
+│   │   ├── deduplication.py     # Content deduplication
+│   │   └── token_budget.py      # Token management
+│   ├── personalization/
+│   │   ├── __init__.py
+│   │   ├── role_handler.py      # Role-based filtering
+│   │   └── permissions.py       # Access control
+│   └── utils/
+│       ├── __init__.py
+│       ├── tokenizer.py         # tiktoken utilities
+│       └── config_loader.py     # Configuration management
+├── data/
+│   ├── mock/                    # Mock data for testing
+│   │   ├── mock_tasks.json
+│   │   ├── mock_graphiti.json
+│   │   └── mock_documents.json
+│   └── schemas/                 # Data schemas
+│       ├── task_schema.json
+│       └── context_schema.json
+├── tests/
+│   ├── __init__.py
+│   ├── test_data_sources.py
+│   ├── test_retrieval.py
+│   ├── test_optimization.py
+│   └── test_integration.py
+└── examples/
+    ├── basic_usage.py
+    ├── role_based_demo.py
+    └── benchmark_performance.py
