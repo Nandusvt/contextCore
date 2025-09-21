@@ -1,52 +1,52 @@
 [
   {
     "role": "Guest",
-    "query": "what is love in brief",
-    "response": "I'm sorry, but I am unable to access the recent conversation history or provide a relevant response to your query without additional context. If you can provide more information or clarify the context, I would be happy to assist you further."
+    "query": "What problem did Oakhaven face?",
+    "response": "The Great Hush \u2014 A creeping quiet, which Finn called \"The Great Hush,\" began to settle over everything."
   },
   {
     "role": "Guest",
-    "query": "what is love in brief",
-    "response": "Love can be described as a complex and profound emotion that involves a deep connection, affection, and care for someone or something. It is often associated with feelings of warmth, compassion, and understanding towards others. Love can manifest in various forms, such as romantic love, platonic love, or love for family and friends. Ultimately, love is a powerful force that can bring joy, fulfillment, and meaning to our lives."
+    "query": "What did Finn find in the forest?",
+    "response": "Not found in the provided document."
   },
   {
     "role": "Guest",
-    "query": "what is love in single line",
-    "response": "Based on the recent conversation history provided, the most relevant information for the query \"what is love in single line\" can be summarized as follows:\n\nLove is a profound emotion that involves deep connection, affection, and care, bringing joy and meaning to our lives."
+    "query": "Why was the spirit taking the sounds?",
+    "response": "Not found in the provided document."
   },
   {
     "role": "Guest",
-    "query": "what is love in single word",
-    "response": "Based on the recent conversation history, the most relevant information for the query \"what is love in single word\" can be summarized as follows:\n\nLove is a profound emotion that involves deep connection, affection, and care, bringing joy and meaning to our lives."
+    "query": "Why was the spirit taking the sounds?",
+    "response": "The spirit was taking the sounds because it was lonely and gathered the echoes to have company. It did not mean to steal but only borrowed what drifted away. Finn, the main character of the story, understood this when he encountered the Air Elemental in the forest and realized the spirit's intentions. Finn ultimately released the sounds he had collected back into the world, breaking the Great Hush that had settled over Oakhaven and bringing back the joy and memories that had been lost."
   },
   {
     "role": "Guest",
-    "query": "what is love in single word",
-    "response": "Based on the recent conversation history provided, the most relevant information for the query \"what is love in single word\" can be summarized as follows:\n\nLove is a profound emotion that involves deep connection, affection, and care, bringing joy and meaning to our lives."
+    "query": "Why was the spirit taking the sounds , answer in 20 words?",
+    "response": "The spirit took sounds because it was lonely, gathering echoes for company. Finn understood and released the sounds, breaking the Great Hush."
   },
   {
     "role": "Guest",
-    "query": "what is love in a single word",
-    "response": "Based on the recent conversation history provided, the most relevant information for the query \"what is love in a single word\" can be summarized as follows:\n\nLove is a profound emotion that involves deep connection, affection, and care, bringing joy and meaning to our lives."
+    "query": "What did Finn find in the forest? , answer in 20 words?",
+    "response": "Finn found an Air Elemental in the forest, lonely and gathering echoes for company, leading to a transformative realization."
   },
   {
     "role": "Guest",
-    "query": "what is love in a single word",
-    "response": "Connection"
+    "query": "What did Finn find in the forest? , answer in 20 words?",
+    "response": "Finn found an Air Elemental in the forest, lonely and gathering echoes for company, leading to a transformative realization."
   },
   {
     "role": "Guest",
-    "query": "what is love only output single word",
-    "response": "Connection"
+    "query": "Is there a character named 'nandu' in this story?",
+    "response": "There is no character named 'nandu' mentioned in the provided story. The main character in the story is Finn, who plays a significant role in collecting forgotten sounds and releasing them back into the world to break the Great Hush that had settled over Oakhaven."
   },
   {
     "role": "Guest",
-    "query": "what is parenthood only output single word",
-    "response": "Connection"
+    "query": "Is there a character named 'nandu' in this story?",
+    "response": "There is no character named 'nandu' mentioned in the provided story. The main character in the story is Finn, who plays a significant role in collecting forgotten sounds and releasing them back into the world to break the Great Hush that had settled over Oakhaven."
   },
   {
     "role": "Guest",
-    "query": "what is anger only output single word",
-    "response": "Connection"
+    "query": "Is there a character named 'nandu' in this story,Answer in Yes or No",
+    "response": "Is there a character named 'nandu' in this story?  \nAnswer: No"
   }
 ]
