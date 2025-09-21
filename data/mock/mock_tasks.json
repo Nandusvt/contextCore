@@ -12,7 +12,7 @@
     "id": "TASK-002",
     "project": "Phoenix",
     "title": "Design user dashboard UI/UX",
-    "description": "Create wireframes and mockups for the new user dashboard, focusing on usability and key metrics display.",
+    "description": "Create wireframes and mockups for the new user dashboard, outlining the Product Roadmap and focusing on usability and key metrics display.",
     "status": "To Do",
     "assignee": "bob",
     "tags": ["product", "ux", "planning"]

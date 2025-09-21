@@ -22,15 +22,12 @@ class TaskContextSource(BaseContextSource):
         try:
             with open(self.tasks_path, 'r', encoding='utf-8-sig') as f:
                 self.data = json.load(f)
-            print(f"[DEBUG] Loaded tasks data: {self.data}")
             # If data is a dict with 'tasks' key, use that
             if isinstance(self.data, dict) and 'tasks' in self.data:
                 self.data = self.data['tasks']
         except FileNotFoundError:
-            print(f"Error: Task data file not found at {self.tasks_path}")
             self.data = []
         except json.JSONDecodeError as e:
-            print(f"Error: Could not decode JSON from {self.tasks_path}: {e}")
             self.data = []
 
     def retrieve(self, query: str, **kwargs) -> List[Dict[str, Any]]:
