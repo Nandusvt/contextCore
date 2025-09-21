@@ -1,9 +1,9 @@
 ﻿[
   {
     "id": "DOC-001",
-    "title": "Product Vision",
+    "title": "QuantumLeap Architecture",
     "chunks": [
-      "This document outlines the long-term product vision and goals."
+      "QuantumLeap Architecture document describing microservices design and architecture."
     ],
     "tags": ["product", "planning", "public"]
   }

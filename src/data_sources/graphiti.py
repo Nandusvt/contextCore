@@ -23,15 +23,12 @@ class GraphitiContextSource(BaseContextSource):
         try:
             with open(self.graph_path, 'r', encoding='utf-8-sig') as f:
                 self.data = json.load(f)
-            print(f"[DEBUG] Loaded graphiti data: {self.data}")
             # If data is a dict with 'graphiti' key, use that
             if isinstance(self.data, dict) and 'graphiti' in self.data:
                 self.data = self.data['graphiti']
         except FileNotFoundError:
-            print(f"Error: Graphiti data file not found at {self.graph_path}")
             self.data = []
         except json.JSONDecodeError as e:
-            print(f"Error: Could not decode JSON from {self.graph_path}: {e}")
             self.data = []
 
     def retrieve(self, query: str, **kwargs) -> List[Dict[str, Any]]:

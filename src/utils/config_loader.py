@@ -14,7 +14,6 @@ def load_config(path: str) -> Dict[str, Any]:
     try:
         with open(path, 'r') as f:
             config = yaml.safe_load(f)
-            print(f"[DEBUG] Loaded config from {path}: {config}")
             return config
     except FileNotFoundError:
         print(f"Error: Configuration file not found at {path}")

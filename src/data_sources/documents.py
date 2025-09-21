@@ -22,15 +22,12 @@ class DocumentContextSource(BaseContextSource):
         try:
             with open(self.docs_path, 'r', encoding='utf-8-sig') as f:
                 self.data = json.load(f)
-            print(f"[DEBUG] Loaded documents data: {self.data}")
             # If data is a dict with 'documents' key, use that
             if isinstance(self.data, dict) and 'documents' in self.data:
                 self.data = self.data['documents']
         except FileNotFoundError:
-            print(f"Error: Document data file not found at {self.docs_path}")
             self.data = []
         except json.JSONDecodeError as e:
-            print(f"Error: Could not decode JSON from {self.docs_path}: {e}")
             self.data = []
 
     def retrieve(self, query: str, **kwargs) -> List[Dict[str, Any]]:

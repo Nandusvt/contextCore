@@ -33,13 +33,12 @@ class ContextRetriever:
         for key, source_config in self.config.items():
             if source_config.get("enabled", False):
                 if key in source_class_map:
-                    print(f"Initializing data source: {key}")
                     try:
                         self.sources[key] = source_class_map[key](source_config)
-                    except ValueError as e:
-                        print(f"Error initializing source '{key}': {e}")
+                    except ValueError:
+                        pass
                 else:
-                    print(f"Warning: Unknown data source type '{key}' in config.")
+                    pass
 
     def retrieve(self, query: str, allowed_sources: List[str] = None) -> List[Dict[str, Any]]:
         """
@@ -59,14 +58,12 @@ class ContextRetriever:
         sources_to_query = self.sources
         if allowed_sources is not None:
             sources_to_query = {key: self.sources[key] for key in allowed_sources if key in self.sources}
-            print(f"Querying a subset of sources: {list(sources_to_query.keys())}")
 
         for source_name, source_instance in sources_to_query.items():
             try:
                 chunks = source_instance.retrieve(query)
-                print(f"Retrieved {len(chunks)} chunks from '{source_name}'.")
                 all_chunks.extend(chunks)
-            except Exception as e:
-                print(f"Error retrieving from source '{source_name}': {e}")
+            except Exception:
+                pass
 
         return all_chunks
